@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * @author Faisal Ahmed
+ * @author Nadib Hussain
  * This is a helper class for input/output in java.
  * Your don't need to use it if you want. This is
  * just for your convenience. Don't use Scanner or
@@ -33,5 +33,13 @@ public class IO {
 
     public static void printLine(Object value) {
         System.out.println(value);
+    }
+    public static int[] readMultipleLineAsInteger() {
+        String[] line=readLine().split("\\s+");
+        int[] num=new int[line.length];
+        for(int x=0;x<line.length;x++) {
+        	num[x]=Integer.parseInt(line[x]);
+        }
+        return num;
     }
 }
