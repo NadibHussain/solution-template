@@ -21,6 +21,7 @@ public class Solution implements Runnable {
     	//Number of iteration 
     	for(int iteration=0;iteration<test;iteration++)
     	{	
+    		printLine("Test: "+(iteration+1));
     		int tables=readLineAsInteger();
     		  Table[] t=new Table[tables];
     		  //input Number of tables
@@ -171,7 +172,7 @@ public class Solution implements Runnable {
 						}
     			    }
     			   
-    			    printLine("");
+    			    
     			  //Printing the columns Names
     			    String firstline="";
     			    
@@ -217,6 +218,11 @@ public class Solution implements Runnable {
 						
     			    	}	
 					}
+    			    if(y+1!=querynum)
+    			    {
+    			    	 printLine("");
+    			    }
+    			   
     			 tableA.shortname="";
     			 tableA.show=new int[tableA.col];
     			 tableB.shortname="";
