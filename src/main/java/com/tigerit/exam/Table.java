@@ -16,4 +16,7 @@ public class Table {
 	  data=new String[ro][col];
 	  col_name=new String[col];
 	}
+	public void rearrange() {
+		java.util.Arrays.sort(data, (a, b) -> Integer.compare(Integer.parseInt(a[0]),Integer.parseInt(b[0])));
+	}
 }

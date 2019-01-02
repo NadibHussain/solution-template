@@ -39,6 +39,8 @@ public class Solution implements Runnable {
     				  String datas=readLine();
     				  t[y].data[r]=datas.split("\\s+");
     			  }
+    			  // Sorting data table
+    			  t[y].rearrange();
     		  }
     		  //Total number of Queries
     		  int querynum=readLineAsInteger();
